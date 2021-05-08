@@ -1,0 +1,83 @@
+.card {
+  position: relative;
+  top: 0;
+  background-color: #fefae0;
+  width: 375px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7.5px;
+  padding-bottom: 10px;
+  border-radius: 1.5em;
+  border: 3px solid #283618;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+  border-color: #bc6c25;
+}
+
+.card:hover .card-text {
+  color: #bc6c25;
+}
+
+.card-image {
+  width: 95%;
+  max-width: 360px;
+  height: 100%;
+  max-height: 360px;
+  border-radius: 1em;
+  background-position: center;
+}
+
+.card-text {
+  height: 10%;
+  margin-top: 5%;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #283618;
+}
+
+@media screen and (max-width: 1182px) {
+  .card {
+    transform: scale(0.89);
+    width: 345px;
+  }
+  .card:hover {
+    transform: scale(0.9);
+  }
+  .card-text {
+    transform: scale(0.9);
+    margin-top: 5%;
+  }
+  .card-image {
+    max-width: 324px;
+    max-height: 324px;
+    background-size: 324px 290px;
+  }
+}
+
+@media screen and (max-width: 802px) {
+  .card {
+    padding-top: 5px;
+    transform: scale(0.79);
+    width: 308px;
+  }
+  .card:hover {
+    transform: scale(0.8);
+  }
+  .card-text {
+    transform: scale(0.8);
+    margin-top: 5%;
+    height: 8%;
+  }
+  .card-image {
+    max-width: 288px;
+    max-height: 288px;
+    background-size: 288px 250px;
+  }
+}

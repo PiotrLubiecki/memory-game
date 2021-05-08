@@ -1,0 +1,46 @@
+#scoreboard {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  width: 15%;
+  min-width: 200px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #fefae0;
+  color: #bc6c25;
+  border: solid 3px #bc6c25;
+  border-radius: 1em;
+  padding: 10px;
+  z-index: 1;
+}
+
+.scoreboard-display {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.scoreboard-display p {
+  width: 60%;
+}
+
+@media screen and (max-width: 1182px) {
+  #scoreboard {
+    transform: scale(0.9);
+    top: unset;
+    bottom: 20%;
+    left: 1%;
+    min-width: 180px;
+  }
+}
+
+@media screen and (max-width: 802px) {
+  #scoreboard {
+    transform: scale(0.8);
+    bottom: 1%;
+  }
+}

@@ -1,0 +1,32 @@
+header {
+  width: 100%;
+  height: 8%;
+  min-height: 40px;
+  background-color: #283618;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+
+header p {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 20%;
+  width: max-content;
+  font-size: 32px;
+  color: #fefae0;
+}
+
+@media screen and (max-width: 1182px) {
+  header p {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 802px) {
+  header p {
+    font-size: 26px;
+  }
+}

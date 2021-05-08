@@ -1,0 +1,191 @@
+#main-content {
+  position: relative;
+  height: calc(84% - 40px);
+  min-height: 560px;
+  max-height: calc(1080px - 8%);
+  max-width: calc(100% -40px);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#background-image-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-height: 1080px;
+  width: 100%;
+  background-image: url(/src/images/Savannah.jpg);
+  opacity: 0.7;
+}
+
+.card-div {
+  height: 55%;
+  min-height: 400px;
+  max-height: 450px;
+  position: relative;
+}
+
+.showup {
+  animation: showup 1s ease-out 0s forwards;
+}
+
+@keyframes showup {
+  0% {
+    transform: translateX(-2000px) translateY(-2000px);
+  }
+
+  50% {
+    transform: translateX(-500px) translateY(-500px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+.hidecard {
+  animation: hidecard 1.5s ease-in 0.1s forwards;
+}
+
+@keyframes hidecard {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(2000px) translateY(-2000px);
+  }
+}
+
+#restart-game-button {
+  position: absolute;
+  left: 42.5%;
+  bottom: 1.5%;
+  width: 15%;
+  height: 10%;
+  font-size: 28px;
+  border-radius: 5em;
+  color: #fefae0;
+  background-color: #bc6c25;
+  border: solid 3px #fefae0;
+  opacity: 0.8;
+}
+
+#restart-game-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  opacity: 1;
+}
+
+#game-result-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 30%;
+  max-height: 300px;
+  width: 25%;
+  min-width: 450px;
+  background-color: #fefae0;
+  border: 5px solid #bc6c25;
+  border-radius: 1em;
+  font-size: 50px;
+  opacity: 0;
+  cursor: default;
+  user-select: none;
+}
+
+#try-again-button {
+  width: 30%;
+  height: 20%;
+  font-size: 18px;
+  border: solid 2px #bc6c25;
+  border-radius: 1.5em;
+  background-color: #dda15e;
+  color: #fefae0;
+}
+
+#try-again-button:hover {
+  transform: scale(1.02);
+  background-color: #bc6c25;
+}
+
+.unhide {
+  animation: unhide 2.5s ease-in-out 1 forwards;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+@keyframes unhide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1182px) {
+  .card-div {
+    transform: scale(0.9);
+    height: 50%;
+    min-height: unset;
+    max-height: 300px;
+  }
+
+  #restart-game-button {
+    transform: scale(0.9);
+    left: 75%;
+    bottom: 17.5%;
+    border-radius: 2em;
+    font-size: 26px;
+    min-width: 180px;
+  }
+  #restart-game-button:hover {
+    transform: scale(0.92);
+  }
+}
+
+@media screen and (max-width: 802px) {
+  #main-content {
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .card-div {
+    height: 30%;
+    min-height: unset;
+    max-height: unset;
+  }
+  #restart-game-button {
+    transform: scale(0.82);
+    left: calc(75% - 90px);
+    bottom: 1%;
+    border-radius: 2em;
+    font-size: 22px;
+    min-width: 180px;
+  }
+  #restart-game-button:hover {
+    transform: scale(0.82);
+  }
+  #game-result-message {
+    min-width: 250px;
+    font-size: 26px;
+    height: 25%;
+    max-height: 160px;
+  }
+  #try-again-button {
+    width: 40%;
+    font-size: 16px;
+  }
+}
