@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.e0312f70.chunk.css",
+    "main.js": "/memory-game/static/js/main.0df2c64c.chunk.js",
+    "main.js.map": "/memory-game/static/js/main.0df2c64c.chunk.js.map",
+    "runtime-main.js": "/memory-game/static/js/runtime-main.4a338bb6.js",
+    "runtime-main.js.map": "/memory-game/static/js/runtime-main.4a338bb6.js.map",
+    "static/js/2.26b9eb6a.chunk.js": "/memory-game/static/js/2.26b9eb6a.chunk.js",
+    "static/js/2.26b9eb6a.chunk.js.map": "/memory-game/static/js/2.26b9eb6a.chunk.js.map",
+    "static/js/3.33cbd922.chunk.js": "/memory-game/static/js/3.33cbd922.chunk.js",
+    "static/js/3.33cbd922.chunk.js.map": "/memory-game/static/js/3.33cbd922.chunk.js.map",
+    "index.html": "/memory-game/index.html",
+    "static/css/main.e0312f70.chunk.css.map": "/memory-game/static/css/main.e0312f70.chunk.css.map",
+    "static/js/2.26b9eb6a.chunk.js.LICENSE.txt": "/memory-game/static/js/2.26b9eb6a.chunk.js.LICENSE.txt",
+    "static/media/MainContent.css": "/memory-game/static/media/Savannah.dfbf8b41.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a338bb6.js",
+    "static/js/2.26b9eb6a.chunk.js",
+    "static/css/main.e0312f70.chunk.css",
+    "static/js/main.0df2c64c.chunk.js"
+  ]
+}
