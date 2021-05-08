@@ -8,7 +8,7 @@ function Card(props) {
       <div
         className="card-image"
         style={{
-          backgroundImage: `url(/animalImages/${props.value}.jpg)`,
+          backgroundImage: `url(./animalImages/${props.value}.jpg)`,
         }}
       ></div>
       <div className="card-text">{animalName}</div>
